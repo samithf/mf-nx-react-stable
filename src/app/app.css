@@ -1,0 +1,24 @@
+/* Your styles goes here. */
+.header {
+  grid-area: header;
+  /* background-color: #fed330; */
+}
+.article {
+  grid-area: content;
+  /* background-color: #20bf6b; */
+  padding: 20px;
+}
+.aside {
+  grid-area: sidebar;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 64px auto;
+  grid-template-areas:
+    'header header'
+    'sidebar content';
+}
